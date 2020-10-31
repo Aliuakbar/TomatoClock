@@ -1,3 +1,5 @@
+Not actively maintained!
+
 # Pomodore (Tomato Clock 2.1 Port)
 ## Introduction
 This is an addon for [Anki](https://apps.ankiweb.net/) which augments your
