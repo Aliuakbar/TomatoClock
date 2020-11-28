@@ -3,10 +3,7 @@
 # Project : TomatoClock
 
 
-from anki.sync import os
 from .kkLib import MetaConfigObj
-path_join = os.path.join
-
 
 class ProfileConfig(metaclass=MetaConfigObj):
     class Meta:

@@ -46,17 +46,17 @@ class ConfigDialog(QDialog, Ui_dlg_config):
         _dict = {}
 
         for r in range(rc):
-            min_item = self.tableWidget.item(r, 0)
+            work_item = self.tableWidget.item(r, 0)
             break_item = self.tableWidget.item(r, 1)
             assert isinstance(item, QTableWidgetItem)
             assert isinstance(item, QTableWidgetItem)
 
-            min_txt = min_item.text()
-            break_min_txt = break_item.text()
-            if not all([min_txt, break_min_txt]):
+            work_txt = work_item.text()
+            break_txt = break_item.text()
+            if not all([work_txt, break_txt]):
                 continue
 
-            _dict["{}MIN".format(min_item.text())] = int(min_item.text())
+            _dict["{}MIN".format(work_txt)] = int(break_txt)
         else:
             UserConfig.BREAK_MINUTES = _dict
 

@@ -38,7 +38,7 @@ from .uuid import uuid4
 import aqt
 from anki.lang import _, currentLang
 from aqt import *
-from aqt.downloader import download
+# from aqt.downloader import download
 from aqt.utils import showInfo, openLink
 
 ASYNC_HOOKS = []
